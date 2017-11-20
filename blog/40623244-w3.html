@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en"
+>
+<head>
+    <title>2017 Fall CP 第三週 - 2017Fall CADP&CP (虎尾科大MDE)</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="./40623244-w3.html">
+
+        <meta name="author" content="40623244" />
+        <meta name="keywords" content="2017fall,CP" />
+        <meta name="description" content="學習啟動隨身系統,如何建立倉儲,如何改版,以及如何同步遠近端倉儲資料(補充:修改倉儲密碼)" />
+
+        <meta property="og:site_name" content="2017Fall CADP&CP (虎尾科大MDE)" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="2017 Fall CP 第三週"/>
+        <meta property="og:url" content="./40623244-w3.html"/>
+        <meta property="og:description" content="學習啟動隨身系統,如何建立倉儲,如何改版,以及如何同步遠近端倉儲資料(補充:修改倉儲密碼)"/>
+        <meta property="article:published_time" content="2017-09-25" />
+            <meta property="article:section" content="Course" />
+            <meta property="article:tag" content="2017fall" />
+            <meta property="article:tag" content="CP" />
+            <meta property="article:author" content="40623244" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="./theme/css/bootstrap.united.min.css" type="text/css"/>
+    <link href="./theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="./theme/css/pygments/monokai.css" rel="stylesheet">
+    <link href="./theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="./theme/css/style.css" type="text/css"/>
+
+        <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="2017Fall CADP&CP (虎尾科大MDE) ATOM Feed"/>
+
+<script type="text/javascript" src="./../data/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushBash.js"></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "./../data/syntaxhighlighter/shCore.css";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "./../data/syntaxhighlighter/shThemeDefault.css?ver=3.0.9b";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="./" class="navbar-brand">
+2017Fall CADP&CP (虎尾科大MDE)            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="./category/course.html">Course</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="./search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
+              <li><a href="./archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="./40623244-w3.html"
+                       rel="bookmark"
+                       title="Permalink to 2017 Fall CP 第三週">
+                        2017 Fall CP 第三週
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2017-09-25T00:00:00+08:00"> 週一 25 九月 2017</time>
+    </span>
+            <span class="label label-default">By</span>
+            <a href="./author/40623244.html"><i class="fa fa-user"></i> 40623244</a>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="./tag/2017fall.html">2017fall</a>
+        /
+	<a href="./tag/cp.html">CP</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>學習啟動隨身系統,如何建立倉儲,如何改版,以及如何同步遠近端倉儲資料(補充:修改倉儲密碼)</p>
+
+
+<p>內容:</p>
+<p>1.先啟動隨身系統</p>
+<p>2.再批次檔裡輸入下列指令</p>
+<div class="highlight"><pre><span></span>Y:\&gt;隨身碟槽區(H:)
+H:\&gt;mkdir tmp
+H:\&gt;cd tmp
+H:\tmp&gt;mkdir fossil
+H:\tmp&gt;cd fossil
+H:\tmp\fossil&gt;fossil clone https://cadpb.kmol.info/4052 4052.fossil
+H:\tmp\fossil&gt;mkdir wd
+H:\tmp\fossil&gt;cd wd
+H:\tmp\fossil\wd&gt;mkdir 4052
+H:\tmp\fossil\wd&gt;cd 4052
+H:\tmp\fossil\wd\4052&gt;fossil open ./../../4052.fossil
+H:\tmp\fossil\wd\4052&gt;cd ../..
+H:\tmp\fossil&gt;fossil clone https://40623244@cpb.kmol.info/40623244 40623244.fossil
+H:\tmp\fossil\wd&gt;mkdir 40623244
+H:\tmp\fossil\wd&gt;cd 40623244
+H:\tmp\fossil\wd\40623244&gt;fossil open ./../../40623244.fossil
+</pre></div>
+
+
+<p>3.把4052資料夾內的資料複製貼上到40623244資料夾內(__pycache__和__FOSSIL__不用複製)</p>
+<p>4.將所有40623244內的資料推上遠端:</p>
+<div class="highlight"><pre><span></span>H:\tmp\fossil\wd\40623244&gt;fossil add .
+H:\tmp\fossil\wd\40623244&gt;fossil commit -m &quot;initial add&quot;
+</pre></div>
+
+
+<p>補充:</p>
+<p>1.相關指令意義:</p>
+<div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="o">:</span> <span class="err">建立資料夾</span>
+<span class="n">cd</span> <span class="o">:</span> <span class="err">進入指定資料夾</span>
+<span class="s2">&quot;.&quot;</span> <span class="o">:</span> <span class="err">當前資料夾</span>
+<span class="s2">&quot;..&quot;</span> <span class="o">:</span> <span class="err">前一個資料夾</span>
+</pre></div>
+
+
+<p>2.Fossil SCM 指令:</p>
+<div class="highlight"><pre><span></span>fossil clone : 克隆
+fossil open : 開啟
+fossil add : 加入
+fossil commit -m &quot;訊息&quot; : 提交
+</pre></div>
+
+
+<p>3.修改密碼:</p>
+<div class="highlight"><pre><span></span>H:\tmp\fossil&gt;fossil sql -R 40623244.fossil
+sqlite&gt;. schema user
+(看密碼)sqlite&gt;select login , pw from user ;
+(改密碼)sqlite&gt;update user set pw = &#39;密碼&#39; where login = &#39;user&#39;;
+</pre></div>
+
+
+<p>網頁版次:</p>
+<p>[/doc/trunk/index.html | 投影片]</p>
+<p>[/doc/trunk/blog/index.html | 網誌]
+(trunk 為最新版)</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+                <ul class="list-group" id="recentposts">
+                    <li class="list-group-item">
+                        <a href="./40623244-2017-fall-cp-w9.html">
+                            2017 Fall CP 第九週
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./40623244-w8.html">
+                            2017 Fall CP 第八週
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./40623244-w7-exam.html">
+                            計算機程式第七週學習心得
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./40623244-w6.html">
+                            2017 Fall CP 第六週
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./40623244-w4.html">
+                            2017 Fall CP 第四週
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list-group-item"><a href="./categories.html"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Categories</span></h4></a>
+                <ul class="list-group" id="categories">
+                    <li class="list-group-item">
+                        <a href="./category/course.html">
+                            <i class="fa fa-folder-open fa-lg"></i> Course
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list-group-item"><a href="./tags.html"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                <ul class="list-group list-inline tagcloud" id="tags">
+                </ul>
+            </li>
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://github.com/DandyDev/pelican-bootstrap3/" target="_blank">
+                pelican-bootstrap3
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://github.com/getpelican/pelican-plugins" target="_blank">
+                pelican-plugins
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://github.com/Tipue/Tipue-Search" target="_blank">
+                Tipue search
+            </a>
+        </li>
+      </ul>
+    </li>
+    </ul>
+</section>
+            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2017 KMOL
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="./theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./theme/js/bootstrap.min.js"></script>
+
+<!-- for https://github.com/jsor/lity lightbox video popup -->
+
+<link href="./theme/css/lity.css" rel="stylesheet">
+
+<script src="./theme/js/lity.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="./theme/js/respond.min.js"></script>
+
+
+</body>
+</html>
